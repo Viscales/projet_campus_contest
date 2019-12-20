@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>AccueilHASHEM</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="presentation.html">Presentation</a>
+        <a href="#">Projets</a>
+        <a href="#">Cv</a>
+    </div>
+
+    <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Acceuil</span>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.body.style.backgroundColor = "white";
+        }
+
+    </script>
+
+    <header>
+        <div class="montitre">&lt;Developpeur Web&gt;</div>
+    </header>
+    <div class="bouton">
+        <form class="telecharger">
+            <input type="button" onclick="window.location.href = 'https://cdn.cvdesignr.com/cv/pdf/5ba0e7ad989db_4f6414b47f9b5335e402be9cc9b775dabef2d3ae.pdf';" value="Telecharger CV" />
+        </form>
+        <form class="recruter">
+            <input type="button" onclick="window.location.href = 'meContacter.html' ;" value="Me Recruter" />
+        </form>
+    </div>
+
+</body>
+
+</html>
